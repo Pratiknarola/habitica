@@ -1,6 +1,7 @@
 <template>
   <div>
     <buy-gems-modal v-if="user" />
+    <privacy-modal />
     <footer>
       <!-- Product -->
       <div class="product">
@@ -855,6 +856,7 @@ import heart from '@/assets/svg/heart.svg';
 // components & modals
 import { mapState } from '@/libs/store';
 import buyGemsModal from './payments/buyGemsModal.vue';
+import privacyModal from './settings/privacyModal.vue';
 import reportBug from '@/mixins/reportBug.js';
 import { worldStateMixin } from '@/mixins/worldState';
 
@@ -869,6 +871,7 @@ if (TIME_TRAVEL_ENABLED) {
 export default {
   components: {
     buyGemsModal,
+    privacyModal,
   },
   mixins: [
     reportBug,
