@@ -133,7 +133,7 @@
     a {
       line-height: 1.33;
       color: $gray-500;
-      text-decoration: none;
+      font-weight: normal;
     }
   }
 

@@ -35,10 +35,6 @@
             target="_blank"
           >
             <span>{{ $t('petLikeToEat') + ' ' }}</span>
-            <span
-              class="svg-icon inline icon-16"
-              v-html="icons.information"
-            ></span>
           </a>
         </div>
       </drawer-header-tabs>
@@ -72,7 +68,6 @@
 import _filter from 'lodash/filter';
 import { mapState } from '@/libs/store';
 import inventoryUtils from '@/mixins/inventoryUtils';
-import svgInformation from '@/assets/svg/information.svg';
 
 import Drawer from '@/components/ui/drawer';
 import DrawerSlider from '@/components/ui/drawerSlider';
@@ -119,10 +114,6 @@ export default {
         },
       ],
       selectedDrawerTab: this.defaultSelectedTab,
-
-      icons: Object.freeze({
-        information: svgInformation,
-      }),
     };
   },
   computed: {
