@@ -34,7 +34,7 @@
             href="/static/faq#pet-foods"
             target="_blank"
           >
-            <span>{{ $t('petLikeToEat') + ' ' }}</span>
+            <span>{{ $t('petLikeToEat') }}</span>
           </a>
         </div>
       </drawer-header-tabs>
