@@ -30,7 +30,7 @@
   "user": "User",
   "market": "Market",
   "newSubscriberItem": "You have new <span class=\"notification-bold-blue\">Mystery Items</span>",
-  "subscriberItemText": "Each month, subscribers will receive a mystery item. It becomes available at the beginning of the month.",
+  "subscriberItemText": "Subscribers receive a new mystery gear set at the beginning of each month!",
   "all": "All",
   "none": "None",
   "more": "<%= count %> more",

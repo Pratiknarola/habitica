@@ -27,27 +27,19 @@
         @changedPosition="tabSelected($event)"
       >
         <div slot="right-item">
-          <div
+          <a
             v-once
             id="petLikeToEatMarket"
             class="drawer-help-text"
+            href="/static/faq#pet-foods"
+            target="_blank"
           >
             <span>{{ $t('petLikeToEat') + ' ' }}</span>
             <span
               class="svg-icon inline icon-16"
               v-html="icons.information"
             ></span>
-          </div>
-          <b-popover
-            target="petLikeToEatMarket"
-            :placement="'top'"
-          >
-            <div
-              v-once
-              class="popover-content-text"
-              v-html="$t('petLikeToEatText')"
-            ></div>
-          </b-popover>
+          </a>
         </div>
       </drawer-header-tabs>
     </div>
