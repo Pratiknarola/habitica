@@ -6,7 +6,7 @@ services:
     networks:
       - habitica
     environment:
-      - BASE_URL=http://server:3000
+      - BASE_URL=http://server:3050
     ports:
         - "8080:8080"
     command: ["npm", "run", "client:dev"]
@@ -16,7 +16,7 @@ services:
   server:
     build: .
     ports:
-      - "3000:3000"
+      - "3050:3000"
     networks:
       - habitica
     environment:
